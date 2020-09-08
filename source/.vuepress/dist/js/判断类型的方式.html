@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>判断类型的方式 | Adroi媒体API 接口文档</title>
+    <meta name="generator" content="VuePress 1.5.4">
+    
+    <meta name="description" content="Adroi">
+    <link rel="preload" href="/assets/css/0.styles.7950d16d.css" as="style"><link rel="preload" href="/assets/js/app.a8f039a7.js" as="script"><link rel="preload" href="/assets/js/2.b233f276.js" as="script"><link rel="preload" href="/assets/js/52.03ba2ff7.js" as="script"><link rel="prefetch" href="/assets/js/10.45b68d43.js"><link rel="prefetch" href="/assets/js/100.a2bf971c.js"><link rel="prefetch" href="/assets/js/101.6bfd7c76.js"><link rel="prefetch" href="/assets/js/102.976aec73.js"><link rel="prefetch" href="/assets/js/103.f9dda5bb.js"><link rel="prefetch" href="/assets/js/104.7a2c044c.js"><link rel="prefetch" href="/assets/js/105.254fc915.js"><link rel="prefetch" href="/assets/js/106.f41915af.js"><link rel="prefetch" href="/assets/js/107.a66fa4f8.js"><link rel="prefetch" href="/assets/js/108.9b6c69dc.js"><link rel="prefetch" href="/assets/js/109.f1614e55.js"><link rel="prefetch" href="/assets/js/11.1d47dcc9.js"><link rel="prefetch" href="/assets/js/110.48b16839.js"><link rel="prefetch" href="/assets/js/111.d4a62b82.js"><link rel="prefetch" href="/assets/js/112.a5d6d308.js"><link rel="prefetch" href="/assets/js/113.5676d524.js"><link rel="prefetch" href="/assets/js/114.35a64e8e.js"><link rel="prefetch" href="/assets/js/115.4eb6bffb.js"><link rel="prefetch" href="/assets/js/116.36f3e1e4.js"><link rel="prefetch" href="/assets/js/117.6de94982.js"><link rel="prefetch" href="/assets/js/12.bed0e105.js"><link rel="prefetch" href="/assets/js/13.0a5eac21.js"><link rel="prefetch" href="/assets/js/14.7bfc5893.js"><link rel="prefetch" href="/assets/js/15.06f779a9.js"><link rel="prefetch" href="/assets/js/16.9fb99a2c.js"><link rel="prefetch" href="/assets/js/17.89c79110.js"><link rel="prefetch" href="/assets/js/18.48846e09.js"><link rel="prefetch" href="/assets/js/19.d166835e.js"><link rel="prefetch" href="/assets/js/20.c42b4af5.js"><link rel="prefetch" href="/assets/js/21.c826a5fe.js"><link rel="prefetch" href="/assets/js/22.f7c5eb29.js"><link rel="prefetch" href="/assets/js/23.2a8387c7.js"><link rel="prefetch" href="/assets/js/24.1c8761a8.js"><link rel="prefetch" href="/assets/js/25.df9afda7.js"><link rel="prefetch" href="/assets/js/26.254a37a7.js"><link rel="prefetch" href="/assets/js/27.763eb91e.js"><link rel="prefetch" href="/assets/js/28.5fde24ce.js"><link rel="prefetch" href="/assets/js/29.3194dc2b.js"><link rel="prefetch" href="/assets/js/3.9af03473.js"><link rel="prefetch" href="/assets/js/30.adf415e7.js"><link rel="prefetch" href="/assets/js/31.0d9487fa.js"><link rel="prefetch" href="/assets/js/32.b09a0d09.js"><link rel="prefetch" href="/assets/js/33.ac311d11.js"><link rel="prefetch" href="/assets/js/34.0f57c1f7.js"><link rel="prefetch" href="/assets/js/35.fc139df6.js"><link rel="prefetch" href="/assets/js/36.cd5e93dc.js"><link rel="prefetch" href="/assets/js/37.92b4ef45.js"><link rel="prefetch" href="/assets/js/38.200d8d29.js"><link rel="prefetch" href="/assets/js/39.49215cf6.js"><link rel="prefetch" href="/assets/js/4.5ed19beb.js"><link rel="prefetch" href="/assets/js/40.d967755e.js"><link rel="prefetch" href="/assets/js/41.3d11424b.js"><link rel="prefetch" href="/assets/js/42.ddb02fd2.js"><link rel="prefetch" href="/assets/js/43.72451ce4.js"><link rel="prefetch" href="/assets/js/44.dda78bfd.js"><link rel="prefetch" href="/assets/js/45.5b7bcf15.js"><link rel="prefetch" href="/assets/js/46.e8267815.js"><link rel="prefetch" href="/assets/js/47.a31ff353.js"><link rel="prefetch" href="/assets/js/48.72d2784b.js"><link rel="prefetch" href="/assets/js/49.2f5bc428.js"><link rel="prefetch" href="/assets/js/5.f5c0ce10.js"><link rel="prefetch" href="/assets/js/50.034785a8.js"><link rel="prefetch" href="/assets/js/51.175ebded.js"><link rel="prefetch" href="/assets/js/53.5242c91c.js"><link rel="prefetch" href="/assets/js/54.ca3f953a.js"><link rel="prefetch" href="/assets/js/55.1a5c5c9f.js"><link rel="prefetch" href="/assets/js/56.4d18a0bc.js"><link rel="prefetch" href="/assets/js/57.7cf39605.js"><link rel="prefetch" href="/assets/js/58.05f13011.js"><link rel="prefetch" href="/assets/js/59.911c3751.js"><link rel="prefetch" href="/assets/js/6.b4a5dcc0.js"><link rel="prefetch" href="/assets/js/60.b4a8a69b.js"><link rel="prefetch" href="/assets/js/61.bc7b4786.js"><link rel="prefetch" href="/assets/js/62.0884aba5.js"><link rel="prefetch" href="/assets/js/63.3a4807c0.js"><link rel="prefetch" href="/assets/js/64.a73cbe1c.js"><link rel="prefetch" href="/assets/js/65.9ce55b96.js"><link rel="prefetch" href="/assets/js/66.63299762.js"><link rel="prefetch" href="/assets/js/67.24873c55.js"><link rel="prefetch" href="/assets/js/68.e25a440a.js"><link rel="prefetch" href="/assets/js/69.2b08dddd.js"><link rel="prefetch" href="/assets/js/7.7026210c.js"><link rel="prefetch" href="/assets/js/70.36069df9.js"><link rel="prefetch" href="/assets/js/71.020da373.js"><link rel="prefetch" href="/assets/js/72.be9a4443.js"><link rel="prefetch" href="/assets/js/73.39a6064f.js"><link rel="prefetch" href="/assets/js/74.4594d1a5.js"><link rel="prefetch" href="/assets/js/75.1cdcb0c8.js"><link rel="prefetch" href="/assets/js/76.0195b2cc.js"><link rel="prefetch" href="/assets/js/77.615e5834.js"><link rel="prefetch" href="/assets/js/78.d7db8490.js"><link rel="prefetch" href="/assets/js/79.f3d6c5a0.js"><link rel="prefetch" href="/assets/js/8.bb748099.js"><link rel="prefetch" href="/assets/js/80.c4f67a4b.js"><link rel="prefetch" href="/assets/js/81.d51cedf7.js"><link rel="prefetch" href="/assets/js/82.3f27cee9.js"><link rel="prefetch" href="/assets/js/83.89df6e98.js"><link rel="prefetch" href="/assets/js/84.258ae313.js"><link rel="prefetch" href="/assets/js/85.69d467bd.js"><link rel="prefetch" href="/assets/js/86.cee6ae45.js"><link rel="prefetch" href="/assets/js/87.a2512d98.js"><link rel="prefetch" href="/assets/js/88.e33945a6.js"><link rel="prefetch" href="/assets/js/89.ac3d4c85.js"><link rel="prefetch" href="/assets/js/9.6341ef08.js"><link rel="prefetch" href="/assets/js/90.31bd1ef5.js"><link rel="prefetch" href="/assets/js/91.60f3687a.js"><link rel="prefetch" href="/assets/js/92.cb37f837.js"><link rel="prefetch" href="/assets/js/93.903d1935.js"><link rel="prefetch" href="/assets/js/94.59089737.js"><link rel="prefetch" href="/assets/js/95.4a6d7e03.js"><link rel="prefetch" href="/assets/js/96.1f626ad6.js"><link rel="prefetch" href="/assets/js/97.7b9a3517.js"><link rel="prefetch" href="/assets/js/98.00872dff.js"><link rel="prefetch" href="/assets/js/99.38d137f2.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.7950d16d.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Adroi媒体API 接口文档</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/apiword.html" class="nav-link">
+  接口定义
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/apiword.html" class="nav-link">
+  接口定义
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>chart</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>css</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>electron</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>git</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>js</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/js/dataTable中自定义列排序问题.html" class="sidebar-link">dataTable中自定义列排序问题</a></li><li><a href="/js/js-jquery判断是否包含类.html" class="sidebar-link">js/jquery判断是否包含类</a></li><li><a href="/js/js中函数的参数传递误区.html" class="sidebar-link">js中函数的参数传递误区</a></li><li><a href="/js/js中对象的delete.html" class="sidebar-link">js中对象的delete</a></li><li><a href="/js/js中的this机制.html" class="sidebar-link">js中的this机制</a></li><li><a href="/js/js原型.html" class="sidebar-link">js的封装和继承</a></li><li><a href="/js/js基本类型和引用类型.html" class="sidebar-link">变量、作用域和内存问题</a></li><li><a href="/js/js的事件模型.html" class="sidebar-link">js的事件模型</a></li><li><a href="/js/js的几种模块化方式.html" class="sidebar-link">js的几种模块化方式</a></li><li><a href="/js/js的有趣应用.html" class="sidebar-link">js的有趣应用</a></li><li><a href="/js/js的灵活.html" class="sidebar-link">js的灵活</a></li><li><a href="/js/js自定义modal框.html" class="sidebar-link">js自定义modal框</a></li><li><a href="/js/list转成tree型数据结构.html" class="sidebar-link">list转成tree型数据结构</a></li><li><a href="/js/macrotask和microtask以及eventloop的介绍.html" class="sidebar-link">macrotask和microtask以及eventloop的介绍</a></li><li><a href="/js/readyState和DomContentLoaded的先后顺序.html" class="sidebar-link">readyState和DomContentLoaded的先后顺序</a></li><li><a href="/js/reduce函数的应用.html" class="sidebar-link">reduce函数的应用</a></li><li><a href="/js/repalce函数的应用.html" class="sidebar-link">repalce函数的应用</a></li><li><a href="/js/stopImmediatePropagation和stopPropagation的区别.html" class="sidebar-link">stopImmediatePropagation和stopPropagation的区别</a></li><li><a href="/js/stringify的使用.html" class="sidebar-link">stringify的使用</a></li><li><a href="/js/video基本知识点.html" class="sidebar-link">video基本知识点</a></li><li><a href="/js/判断类型的方式.html" class="active sidebar-link">判断类型的方式</a></li><li><a href="/js/前端的常用转换操作.html" class="sidebar-link">前端的常用转换操作</a></li><li><a href="/js/将数组扁平化并去除其中重复数据，最终得到一个升序且不重复的数组.html" class="sidebar-link">将数组扁平化并去除其中重复数据，最终得到一个升序且不重复的数组</a></li><li><a href="/js/执行栈和执行上下文.html" class="sidebar-link">执行栈和执行上下文</a></li><li><a href="/js/模拟一些常见的js函数.html" class="sidebar-link">模拟一些常见的js函数</a></li><li><a href="/js/比较两个值相等.html" class="sidebar-link">比较两个值相等</a></li><li><a href="/js/深拷贝.html" class="sidebar-link">深拷贝</a></li><li><a href="/js/监听快捷键.html" class="sidebar-link">监听快捷键</a></li><li><a href="/js/移动端iphone点击返回时强制页面刷新解决办法.html" class="sidebar-link">移动端iphone点击返回时强制页面刷新解决办法</a></li><li><a href="/js/移动端判断横竖屏的兼容性写法.html" class="sidebar-link">移动端判断横竖屏的兼容性写法</a></li><li><a href="/js/类型转换.html" class="sidebar-link">类型转换</a></li><li><a href="/js/缓存memorize.html" class="sidebar-link">缓存memorize</a></li><li><a href="/js/自增version的脚本.html" class="sidebar-link">自增version的脚本</a></li><li><a href="/js/节流和防抖.html" class="sidebar-link">节流和防抖</a></li><li><a href="/js/装箱和拆箱.html" class="sidebar-link">装箱和拆箱</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>nodejs</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>other</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>vue</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>webpack</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h4 id="typeof"><a href="#typeof" class="header-anchor">#</a> typeof</h4> <p>取值范围</p> <ul><li>number</li> <li>string</li> <li>object</li> <li>function</li> <li>boolean</li> <li>symbol</li> <li>boolean</li></ul> <div class="language- extra-class"><pre class="language-text"><code>typeof 12 // 'number'
+typeof 'aa' // 'string'
+typeof false // 'boolean'
+typeof {} // 'object'
+typeof function(){} // 'function'
+typeof [] // 'object'
+typeof new Date() // 'object'
+typeof Symbol() // 'symbol'
+typeof /\w+/ig  // 'object'
+</code></pre></div><h4 id="instanceof"><a href="#instanceof" class="header-anchor">#</a> instanceof</h4> <p>instanceof操作符可以帮助我们判断引用类型具体是什么类型的对象：</p> <div class="language- extra-class"><pre class="language-text"><code>[] instanceof Array // true
+new Date() instanceof Date // true
+new RegExp() instanceof RegExp // true
+</code></pre></div><p>我们先来回顾下原型链的几条规则：</p> <div class="language- extra-class"><pre><code>1.所有引用类型都具有对象特性，即可以自由扩展属性
+2.所有引用类型都具有一个__proto__（隐式原型）属性，是一个普通对象
+3.所有的函数都具有prototype（显式原型）属性，也是一个普通对象
+4.所有引用类型__proto__值指向它构造函数的prototype
+5.当试图得到一个对象的属性时，如果变量本身没有这个属性，则会去他的__proto__中去找
+</code></pre></div><p>[] instanceof Array实际上是判断Array.prototype是否在[]的原型链上。</p> <p>所以，使用instanceof来检测数据类型，不会很准确，这不是它设计的初衷：</p> <div class="language- extra-class"><pre class="language-text"><code>[] instanceof Object // true
+function(){}  instanceof Object // true
+</code></pre></div><p>另外，使用instanceof也不能检测基本数据类型，所以instanceof并不是一个很好的选择。</p> <h4 id="tostring"><a href="#tostring" class="header-anchor">#</a> toString</h4> <p>上面我们在拆箱操作中提到了toString函数，我们可以调用它实现从引用类型的转换。</p> <blockquote><p>每一个引用类型都有toString方法，默认情况下，toString()方法被每个Object对象继承。如果此方法在自定义对象中未被覆盖，toString() 返回 &quot;[object type]&quot;，其中type是对象的类型。</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>const obj = {};
+obj.toString() // [object Object]
+</code></pre></div><p>注意，上面提到了如果此方法在自定义对象中未被覆盖，toString才会达到预想的效果，事实上，大部分引用类型比如Array、Date、RegExp等都重写了toString方法。</p> <p>我们可以直接调用Object原型上未被覆盖的toString()方法，使用call来改变this指向来达到我们想要的效果。</p> <p><img src="/%E5%88%A4%E6%96%AD%E7%B1%BB%E5%9E%8B%E7%9A%84%E6%96%B9%E5%BC%8F/type_convert.png" alt="type_convert"></p> <h4 id="jquery中判断类型的方式"><a href="#jquery中判断类型的方式" class="header-anchor">#</a> jquery中判断类型的方式</h4> <div class="language- extra-class"><pre class="language-text"><code>var types = [
+  'Boolean',
+  'Number',
+  'String',
+  'Function',
+  'Array',
+  'Date',
+  'RegExp',
+  'Object',
+  'Error',
+  'Symbol'
+]
+
+var class2type = {}
+
+types.forEach(name =&gt; {
+  class2type[`[object ${name}]`] = name.toLocaleLowerCase()
+})
+
+function type(obj) {
+  if (obj == null) {
+    return obj+''
+  }
+  return typeof obj === 'object' 
+  ? class2type[Object.prototype.toString.call(obj)] || 'object' 
+  : typeof obj
+}
+
+测试：
+console.log(type(12))   // number
+console.log(type('12'))  // string 
+console.log(type(false))  // boolean
+console.log(type({}))    // object
+console.log(type([]))  // object
+console.log(type(Symbol()))   //symbol
+console.log(type(function(){}))  //function
+console.log(type(undefined))     //undefined
+console.log(type(null))    // null
+console.log(type(Boolean(1)))
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/js/video基本知识点.html" class="prev">
+        video基本知识点
+      </a></span> <span class="next"><a href="/js/前端的常用转换操作.html">
+        前端的常用转换操作
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.a8f039a7.js" defer></script><script src="/assets/js/2.b233f276.js" defer></script><script src="/assets/js/52.03ba2ff7.js" defer></script>
+  </body>
+</html>
