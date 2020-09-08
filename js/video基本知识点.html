@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>video基本知识点 | Adroi媒体API 接口文档</title>
+    <meta name="generator" content="VuePress 1.5.4">
+    
+    <meta name="description" content="Adroi">
+    <link rel="preload" href="/assets/css/0.styles.7950d16d.css" as="style"><link rel="preload" href="/assets/js/app.a8f039a7.js" as="script"><link rel="preload" href="/assets/js/2.b233f276.js" as="script"><link rel="preload" href="/assets/js/51.175ebded.js" as="script"><link rel="prefetch" href="/assets/js/10.45b68d43.js"><link rel="prefetch" href="/assets/js/100.a2bf971c.js"><link rel="prefetch" href="/assets/js/101.6bfd7c76.js"><link rel="prefetch" href="/assets/js/102.976aec73.js"><link rel="prefetch" href="/assets/js/103.f9dda5bb.js"><link rel="prefetch" href="/assets/js/104.7a2c044c.js"><link rel="prefetch" href="/assets/js/105.254fc915.js"><link rel="prefetch" href="/assets/js/106.f41915af.js"><link rel="prefetch" href="/assets/js/107.a66fa4f8.js"><link rel="prefetch" href="/assets/js/108.9b6c69dc.js"><link rel="prefetch" href="/assets/js/109.f1614e55.js"><link rel="prefetch" href="/assets/js/11.1d47dcc9.js"><link rel="prefetch" href="/assets/js/110.48b16839.js"><link rel="prefetch" href="/assets/js/111.d4a62b82.js"><link rel="prefetch" href="/assets/js/112.a5d6d308.js"><link rel="prefetch" href="/assets/js/113.5676d524.js"><link rel="prefetch" href="/assets/js/114.35a64e8e.js"><link rel="prefetch" href="/assets/js/115.4eb6bffb.js"><link rel="prefetch" href="/assets/js/116.36f3e1e4.js"><link rel="prefetch" href="/assets/js/117.6de94982.js"><link rel="prefetch" href="/assets/js/12.bed0e105.js"><link rel="prefetch" href="/assets/js/13.0a5eac21.js"><link rel="prefetch" href="/assets/js/14.7bfc5893.js"><link rel="prefetch" href="/assets/js/15.06f779a9.js"><link rel="prefetch" href="/assets/js/16.9fb99a2c.js"><link rel="prefetch" href="/assets/js/17.89c79110.js"><link rel="prefetch" href="/assets/js/18.48846e09.js"><link rel="prefetch" href="/assets/js/19.d166835e.js"><link rel="prefetch" href="/assets/js/20.c42b4af5.js"><link rel="prefetch" href="/assets/js/21.c826a5fe.js"><link rel="prefetch" href="/assets/js/22.f7c5eb29.js"><link rel="prefetch" href="/assets/js/23.2a8387c7.js"><link rel="prefetch" href="/assets/js/24.1c8761a8.js"><link rel="prefetch" href="/assets/js/25.df9afda7.js"><link rel="prefetch" href="/assets/js/26.254a37a7.js"><link rel="prefetch" href="/assets/js/27.763eb91e.js"><link rel="prefetch" href="/assets/js/28.5fde24ce.js"><link rel="prefetch" href="/assets/js/29.3194dc2b.js"><link rel="prefetch" href="/assets/js/3.9af03473.js"><link rel="prefetch" href="/assets/js/30.adf415e7.js"><link rel="prefetch" href="/assets/js/31.0d9487fa.js"><link rel="prefetch" href="/assets/js/32.b09a0d09.js"><link rel="prefetch" href="/assets/js/33.ac311d11.js"><link rel="prefetch" href="/assets/js/34.0f57c1f7.js"><link rel="prefetch" href="/assets/js/35.fc139df6.js"><link rel="prefetch" href="/assets/js/36.cd5e93dc.js"><link rel="prefetch" href="/assets/js/37.92b4ef45.js"><link rel="prefetch" href="/assets/js/38.200d8d29.js"><link rel="prefetch" href="/assets/js/39.49215cf6.js"><link rel="prefetch" href="/assets/js/4.5ed19beb.js"><link rel="prefetch" href="/assets/js/40.d967755e.js"><link rel="prefetch" href="/assets/js/41.3d11424b.js"><link rel="prefetch" href="/assets/js/42.ddb02fd2.js"><link rel="prefetch" href="/assets/js/43.72451ce4.js"><link rel="prefetch" href="/assets/js/44.dda78bfd.js"><link rel="prefetch" href="/assets/js/45.5b7bcf15.js"><link rel="prefetch" href="/assets/js/46.e8267815.js"><link rel="prefetch" href="/assets/js/47.a31ff353.js"><link rel="prefetch" href="/assets/js/48.72d2784b.js"><link rel="prefetch" href="/assets/js/49.2f5bc428.js"><link rel="prefetch" href="/assets/js/5.f5c0ce10.js"><link rel="prefetch" href="/assets/js/50.034785a8.js"><link rel="prefetch" href="/assets/js/52.03ba2ff7.js"><link rel="prefetch" href="/assets/js/53.5242c91c.js"><link rel="prefetch" href="/assets/js/54.ca3f953a.js"><link rel="prefetch" href="/assets/js/55.1a5c5c9f.js"><link rel="prefetch" href="/assets/js/56.4d18a0bc.js"><link rel="prefetch" href="/assets/js/57.7cf39605.js"><link rel="prefetch" href="/assets/js/58.05f13011.js"><link rel="prefetch" href="/assets/js/59.911c3751.js"><link rel="prefetch" href="/assets/js/6.b4a5dcc0.js"><link rel="prefetch" href="/assets/js/60.b4a8a69b.js"><link rel="prefetch" href="/assets/js/61.bc7b4786.js"><link rel="prefetch" href="/assets/js/62.0884aba5.js"><link rel="prefetch" href="/assets/js/63.3a4807c0.js"><link rel="prefetch" href="/assets/js/64.a73cbe1c.js"><link rel="prefetch" href="/assets/js/65.9ce55b96.js"><link rel="prefetch" href="/assets/js/66.63299762.js"><link rel="prefetch" href="/assets/js/67.24873c55.js"><link rel="prefetch" href="/assets/js/68.e25a440a.js"><link rel="prefetch" href="/assets/js/69.2b08dddd.js"><link rel="prefetch" href="/assets/js/7.7026210c.js"><link rel="prefetch" href="/assets/js/70.36069df9.js"><link rel="prefetch" href="/assets/js/71.020da373.js"><link rel="prefetch" href="/assets/js/72.be9a4443.js"><link rel="prefetch" href="/assets/js/73.39a6064f.js"><link rel="prefetch" href="/assets/js/74.4594d1a5.js"><link rel="prefetch" href="/assets/js/75.1cdcb0c8.js"><link rel="prefetch" href="/assets/js/76.0195b2cc.js"><link rel="prefetch" href="/assets/js/77.615e5834.js"><link rel="prefetch" href="/assets/js/78.d7db8490.js"><link rel="prefetch" href="/assets/js/79.f3d6c5a0.js"><link rel="prefetch" href="/assets/js/8.bb748099.js"><link rel="prefetch" href="/assets/js/80.c4f67a4b.js"><link rel="prefetch" href="/assets/js/81.d51cedf7.js"><link rel="prefetch" href="/assets/js/82.3f27cee9.js"><link rel="prefetch" href="/assets/js/83.89df6e98.js"><link rel="prefetch" href="/assets/js/84.258ae313.js"><link rel="prefetch" href="/assets/js/85.69d467bd.js"><link rel="prefetch" href="/assets/js/86.cee6ae45.js"><link rel="prefetch" href="/assets/js/87.a2512d98.js"><link rel="prefetch" href="/assets/js/88.e33945a6.js"><link rel="prefetch" href="/assets/js/89.ac3d4c85.js"><link rel="prefetch" href="/assets/js/9.6341ef08.js"><link rel="prefetch" href="/assets/js/90.31bd1ef5.js"><link rel="prefetch" href="/assets/js/91.60f3687a.js"><link rel="prefetch" href="/assets/js/92.cb37f837.js"><link rel="prefetch" href="/assets/js/93.903d1935.js"><link rel="prefetch" href="/assets/js/94.59089737.js"><link rel="prefetch" href="/assets/js/95.4a6d7e03.js"><link rel="prefetch" href="/assets/js/96.1f626ad6.js"><link rel="prefetch" href="/assets/js/97.7b9a3517.js"><link rel="prefetch" href="/assets/js/98.00872dff.js"><link rel="prefetch" href="/assets/js/99.38d137f2.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.7950d16d.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Adroi媒体API 接口文档</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/apiword.html" class="nav-link">
+  接口定义
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/apiword.html" class="nav-link">
+  接口定义
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>chart</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>css</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>electron</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>git</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>js</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/js/dataTable中自定义列排序问题.html" class="sidebar-link">dataTable中自定义列排序问题</a></li><li><a href="/js/js-jquery判断是否包含类.html" class="sidebar-link">js/jquery判断是否包含类</a></li><li><a href="/js/js中函数的参数传递误区.html" class="sidebar-link">js中函数的参数传递误区</a></li><li><a href="/js/js中对象的delete.html" class="sidebar-link">js中对象的delete</a></li><li><a href="/js/js中的this机制.html" class="sidebar-link">js中的this机制</a></li><li><a href="/js/js原型.html" class="sidebar-link">js的封装和继承</a></li><li><a href="/js/js基本类型和引用类型.html" class="sidebar-link">变量、作用域和内存问题</a></li><li><a href="/js/js的事件模型.html" class="sidebar-link">js的事件模型</a></li><li><a href="/js/js的几种模块化方式.html" class="sidebar-link">js的几种模块化方式</a></li><li><a href="/js/js的有趣应用.html" class="sidebar-link">js的有趣应用</a></li><li><a href="/js/js的灵活.html" class="sidebar-link">js的灵活</a></li><li><a href="/js/js自定义modal框.html" class="sidebar-link">js自定义modal框</a></li><li><a href="/js/list转成tree型数据结构.html" class="sidebar-link">list转成tree型数据结构</a></li><li><a href="/js/macrotask和microtask以及eventloop的介绍.html" class="sidebar-link">macrotask和microtask以及eventloop的介绍</a></li><li><a href="/js/readyState和DomContentLoaded的先后顺序.html" class="sidebar-link">readyState和DomContentLoaded的先后顺序</a></li><li><a href="/js/reduce函数的应用.html" class="sidebar-link">reduce函数的应用</a></li><li><a href="/js/repalce函数的应用.html" class="sidebar-link">repalce函数的应用</a></li><li><a href="/js/stopImmediatePropagation和stopPropagation的区别.html" class="sidebar-link">stopImmediatePropagation和stopPropagation的区别</a></li><li><a href="/js/stringify的使用.html" class="sidebar-link">stringify的使用</a></li><li><a href="/js/video基本知识点.html" class="active sidebar-link">video基本知识点</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/js/video基本知识点.html#前言" class="sidebar-link">前言</a></li><li class="sidebar-sub-header"><a href="/js/video基本知识点.html#video属性" class="sidebar-link">Video属性</a></li><li class="sidebar-sub-header"><a href="/js/video基本知识点.html#video事件" class="sidebar-link">Video事件</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/js/video基本知识点.html#运行脚本" class="sidebar-link">运行脚本</a></li><li class="sidebar-sub-header"><a href="/js/video基本知识点.html#视频控制" class="sidebar-link">视频控制</a></li></ul></li><li class="sidebar-sub-header"><a href="/js/video基本知识点.html#media方法和属性" class="sidebar-link">Media方法和属性</a></li><li class="sidebar-sub-header"><a href="/js/video基本知识点.html#常见应用" class="sidebar-link">常见应用</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/js/video基本知识点.html#视频非全屏播放" class="sidebar-link">视频非全屏播放</a></li><li class="sidebar-sub-header"><a href="/js/video基本知识点.html#隐藏视频右下角的三个点" class="sidebar-link">隐藏视频右下角的三个点</a></li></ul></li></ul></li><li><a href="/js/判断类型的方式.html" class="sidebar-link">判断类型的方式</a></li><li><a href="/js/前端的常用转换操作.html" class="sidebar-link">前端的常用转换操作</a></li><li><a href="/js/将数组扁平化并去除其中重复数据，最终得到一个升序且不重复的数组.html" class="sidebar-link">将数组扁平化并去除其中重复数据，最终得到一个升序且不重复的数组</a></li><li><a href="/js/执行栈和执行上下文.html" class="sidebar-link">执行栈和执行上下文</a></li><li><a href="/js/模拟一些常见的js函数.html" class="sidebar-link">模拟一些常见的js函数</a></li><li><a href="/js/比较两个值相等.html" class="sidebar-link">比较两个值相等</a></li><li><a href="/js/深拷贝.html" class="sidebar-link">深拷贝</a></li><li><a href="/js/监听快捷键.html" class="sidebar-link">监听快捷键</a></li><li><a href="/js/移动端iphone点击返回时强制页面刷新解决办法.html" class="sidebar-link">移动端iphone点击返回时强制页面刷新解决办法</a></li><li><a href="/js/移动端判断横竖屏的兼容性写法.html" class="sidebar-link">移动端判断横竖屏的兼容性写法</a></li><li><a href="/js/类型转换.html" class="sidebar-link">类型转换</a></li><li><a href="/js/缓存memorize.html" class="sidebar-link">缓存memorize</a></li><li><a href="/js/自增version的脚本.html" class="sidebar-link">自增version的脚本</a></li><li><a href="/js/节流和防抖.html" class="sidebar-link">节流和防抖</a></li><li><a href="/js/装箱和拆箱.html" class="sidebar-link">装箱和拆箱</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>nodejs</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>other</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>vue</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>webpack</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="前言"><a href="#前言" class="header-anchor">#</a> 前言</h2> <p>HTML5中 <strong>video</strong> 标签定义视频，比如电影片段或其他视频流。也就是说video是用来播放视频的，而且是HTML5中的新标签。所以对老浏览器是不支持的，来看看支持。</p> <h2 id="video属性"><a href="#video属性" class="header-anchor">#</a> Video属性</h2> <table><thead><tr><th>属性</th> <th>值</th> <th>描述</th></tr></thead> <tbody><tr><td>autoplay</td> <td>autoplay</td> <td>如果出现该属性，则视频在就绪后马上播放。</td></tr> <tr><td>controls</td> <td>controls</td> <td>如果出现该属性，则向用户显示控件，比如播放按钮。</td></tr> <tr><td>height</td> <td>pixels</td> <td>设置视频播放器的高度。</td></tr> <tr><td>width</td> <td>pixels</td> <td>设置视频播放器的宽度。</td></tr> <tr><td>loop</td> <td>loop</td> <td>如果出现该属性，则当媒介文件完成播放后再次开始播放。</td></tr> <tr><td>muted</td> <td>muted</td> <td>规定视频的音频输出应该被静音。</td></tr> <tr><td>poster</td> <td>URL</td> <td>规定视频下载时显示的图像，或者在用户点击播放按钮前显示的图像。</td></tr> <tr><td>preload</td> <td>pixels</td> <td>如果出现该属性，则视频在页面加载时进行加载，并预备播放。如果使用 &quot;autoplay&quot;，则忽略该属性。</td></tr> <tr><td>src</td> <td>URL</td> <td>要播放的视频的 URL。</td></tr></tbody></table> <h2 id="video事件"><a href="#video事件" class="header-anchor">#</a> Video事件</h2> <table><thead><tr><th>属性</th> <th>值</th> <th>描述</th></tr></thead> <tbody><tr><td>oncanplay</td> <td>script</td> <td>当文件就绪可以开始播放时运行的脚本（缓冲已足够开始时）。</td></tr> <tr><td>oncanplaythrough</td> <td>script</td> <td>当媒介能够无需因缓冲而停止即可播放至结尾时运行的脚本。</td></tr> <tr><td>onemptied</td> <td>script</td> <td>当发生故障并且文件突然不可用时运行的脚本（比如连接意外断开时）。</td></tr> <tr><td>onended</td> <td>script</td> <td>当媒介已到达结尾时运行的脚本（可发送类似“感谢观看”之类的消息）。</td></tr> <tr><td>onerror</td> <td>script</td> <td>当在文件加载期间发生错误时运行的脚本。</td></tr> <tr><td>onloadeddata</td> <td>script</td> <td>当媒介数据已加载时运行的脚本。</td></tr> <tr><td>onpause</td> <td>script</td> <td>当媒介被用户或程序暂停时运行的脚本。</td></tr> <tr><td>onplay</td> <td>script</td> <td>当媒介已就绪可以开始播放时运行的脚本。</td></tr> <tr><td>onplaying</td> <td>script</td> <td>当媒介已开始播放时运行的脚本。</td></tr> <tr><td>onprogress</td> <td>script</td> <td>当浏览器正在获取媒介数据时运行的脚本。</td></tr> <tr><td>ontimeupdate</td> <td>script</td> <td>当播放位置改变时（比如当用户快进到媒介中一个不同的位置时）运行的脚本。</td></tr> <tr><td>onvolumechange</td> <td>script</td> <td>每当音量改变时（包括将音量设置为静音）时运行的脚本。</td></tr> <tr><td>onwaiting</td> <td>script</td> <td>当媒介已停止播放但打算继续播放时（比如当媒介暂停已缓冲更多数据）</td></tr></tbody></table> <h3 id="运行脚本"><a href="#运行脚本" class="header-anchor">#</a> 运行脚本</h3> <div class="language- extra-class"><pre class="language-text"><code>&lt;video width=&quot;100%&quot; height=&quot;100%&quot; id=&quot;playVideo&quot;&gt;
+  &lt;source src=&quot;视频地址&quot; type=&quot;video/mp4&quot;&gt;&lt;/source&gt;
+&lt;/video&gt;
+&lt;!--自定义进度条和音量控制--&gt;
+&lt;div class=&quot;playControll&quot;&gt;
+    &lt;div class=&quot;playPause playIcon&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;timebar&quot;&gt;
+        &lt;span class=&quot;currentTime&quot;&gt;0:00:00&lt;/span&gt;
+        &lt;div class=&quot;progress&quot;&gt;
+            &lt;div class=&quot;progress-bar progress-bar-danger progress-bar-striped&quot; role=&quot;progressbar&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width: 0%&quot;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;span class=&quot;duration&quot;&gt;0:00:00&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;otherControl&quot;&gt;
+        &lt;span class=&quot;volume glyphicon glyphicon-volume-down&quot;&gt;&lt;/span&gt;
+        &lt;span class=&quot;fullScreen glyphicon glyphicon-fullscreen&quot;&gt;&lt;/span&gt;
+        &lt;div class=&quot;volumeBar&quot;&gt;
+            &lt;div class=&quot;volumewrap&quot;&gt;
+                &lt;div class=&quot;progress&quot;&gt;
+                    &lt;div class=&quot;progress-bar progress-bar-danger&quot; role=&quot;progressbar&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width: 8px;height: 40%;&quot;&gt;&lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre></div><p>js</p> <div class="language- extra-class"><pre class="language-text"><code>var myVid=document.getElementById(&quot;playVideo&quot;);
+//播放的速度
+myVid.playbackRate = 1
+myVid.onloadstart = function(){
+  console.log(`onloadstart  客户端开始请求数据  `);
+}
+myVid.ondurationchange=function(){
+  console.log(`durationchange 资源长度改变  `);
+}
+myVid.onratechange=function(){
+  console.log(`onratechange  //播放速率改变  `);
+}
+myVid.onseeking=function(){
+  console.log(` //seeking  寻找中 点击一个为（缓存）下载的区域`);
+}
+myVid.onseeked=function(){
+  console.log(` //seeked 寻找完毕 `);
+}
+myVid.onplay=function(){
+  console.log(`开始播放时触发 `);
+}
+myVid.onwaiting=function(){
+  console.log(`播放由于下一帧数据未获取到导致播放停止，但是播放器没有主动预期其停止，仍然在努力的获取数据，简单的说就是在等待下一帧视频数据，暂时还无法播放。 `);
+}
+myVid.onplaying=function(){
+  console.log(`真正处于播放的状态，这个时候我们才是真正的在观看视频。 `);
+}
+myVid.oncanplay=function(){
+  console.log(`视频播放器已经可以开始播放视频了，但是只是预期可以正常播放，不保证之后的播放不会出现缓冲等待。 `);
+}
+myVid.onpause=function(){
+  console.log(`暂停播放时触发 `);
+}
+myVid.onended=function(){
+  alert(` //播放结束 loop 的情况下不会触发  `);
+}
+myVid.onvolumechange=function(){
+  console.log(`音量改变  `);
+}
+myVid.onloadedmetadata=function(){
+  console.log(`获取视频meta信息完毕，这个时候播放器已经获取到了视频时长和视频资源的文件大小。 `);
+}
+myVid.onloadeddata=function(){
+  console.log(`&quot;视频播放器第一次完成了当前播放位置的视频渲染。&quot;`);
+}
+
+myVid.onabort=function(){
+  console.log(`客户端主动终止下载（不是因为错误引起）， `);
+}
+
+myVid.onerror=function(){
+  console.log(`请求数据时遇到错误`);
+  //1.用户终止 2.网络错误 3.解码错误 4.URL无效
+  alert(myVid.error.code);
+}
+
+//客户端请求数据
+myVid.onprogress=function(){
+  console.log(`客户端正在请求数据 触发多次，是分段请求的`);
+  console.log(myVid.buffered);
+   //0.此元素未初始化  1.正常但没有使用网络  2.正在下载数据  3.没有找到资源
+  console.log(`networkState ${myVid.networkState}`);
+  //  //当前播放的位置，赋值可改变位置 myVid.currentTime = 11 从11秒位置开始播放
+  console.log(myVid.currentTime);
+  // //返回当前资源的URL
+  console.log(myVid.currentSrc);
+
+  console.log(myVid.videoWidth);
+  //播放结束 返回true 或 false
+  console.log(myVid.ended);
+  //音量大小 为0-1 之间的值
+  console.log(myVid.volume);
+
+
+  //当前资源长度
+  console.log(myVid.duration);
+  console.log(myVid.startDate)
+  // myVid.currentTime = 11
+}
+</code></pre></div><h3 id="视频控制"><a href="#视频控制" class="header-anchor">#</a> 视频控制</h3> <div class="language- extra-class"><pre class="language-text"><code>var myVid=document.getElementById(&quot;playVideo&quot;);
+myVid.play(); //播放视频
+myVid.pause();  //暂停视频
+myVid.width=560; //设置视频宽度
+myVid.height=560;  //设置视频高度
+myVid.volume = 0.8; // 音量控制
+全屏和退出全屏
+// 全屏
+if (playVideo[0].requestFullscreen) {
+    playVideo[0].requestFullscreen();
+} else if (playVideo[0].mozRequestFullScreen) {
+    playVideo[0].mozRequestFullScreen();
+} else if (playVideo[0].webkitRequestFullscreen) {
+    playVideo[0].webkitRequestFullscreen();
+} else if (playVideo[0].msRequestFullscreen) {
+    playVideo[0].msRequestFullscreen();
+}
+// 退出全屏
+if (document.exitFullscreen) {
+    document.exitFullscreen();
+} else if (document.mozExitFullScreen) {
+    document.mozExitFullScreen();
+} else if (document.webkitExitFullscreen) {
+    document.webkitExitFullscreen();
+}
+</code></pre></div><h2 id="media方法和属性"><a href="#media方法和属性" class="header-anchor">#</a> Media方法和属性</h2> <blockquote><p>HTMLVideoElement和HTMLAudioElement 均继承自HTMLMediaElement</p></blockquote> <ul><li>Media.error; //null:正常</li> <li>Media.error.code; //1.用户终止 2.网络错误 3.解码错误 4.URL无效</li></ul> <h4 id="网络状态"><a href="#网络状态" class="header-anchor">#</a> 网络状态</h4> <ul><li><p>Media.currentSrc; //返回当前资源的URL</p></li> <li><p>Media.src = value; //返回或设置当前资源的URL</p></li> <li><p>Media.canPlayType(type); //是否能播放某种格式的资源</p></li> <li><p>Media.networkState; //0.此元素未初始化 1.正常但没有使用网络 2.正在下载数据 3.没有找到资源</p></li> <li><p>Media.load(); //重新加载src指定的资源</p></li> <li><p>Media.buffered; //返回已缓冲区域，TimeRanges</p></li> <li><p>Media.preload; //none:不预载 metadata:预载资源信息 auto:
+3.2准备状态</p></li> <li><p>Media.readyState;</p></li></ul> <ol><li>HAVE_NOTHING</li> <li>HAVE_METADATA</li> <li>HAVE_CURRENT_DATA</li> <li>HAVE_FUTURE_DATA</li> <li>HAVE_ENOUGH_DATA</li></ol> <ul><li>Media.seeking; //是否正在seeking</li></ul> <h4 id="回放状态"><a href="#回放状态" class="header-anchor">#</a> 回放状态</h4> <ul><li>Media.currentTime = value; //当前播放的位置，赋值可改变位置</li> <li>Media.startTime; //一般为0，如果为流媒体或者不从0开始的资源，则不为0</li> <li>Media.duration; //当前资源长度 流返回无限</li> <li>Media.paused; //是否暂停</li> <li>Media.defaultPlaybackRate = value;//默认的回放速度，可以设置</li> <li>Media.playbackRate = value;//当前播放速度，设置后马上改变</li> <li>Media.played; //返回已经播放的区域，TimeRanges，关于此对象见下文</li> <li>Media.seekable; //返回可以seek的区域 TimeRanges</li> <li>Media.ended; //是否结束</li> <li>Media.autoPlay; //是否自动播放</li> <li>Media.loop; //是否循环播放</li> <li>Media.play(); //播放</li> <li>Media.pause(); //暂停</li></ul> <h4 id="视频控制-2"><a href="#视频控制-2" class="header-anchor">#</a> 视频控制</h4> <ul><li>Media.controls;//是否有默认控制条</li> <li>Media.volume = value; //音量</li> <li>Media.muted = value; //静音 TimeRanges(区域)对象</li> <li>TimeRanges.length; //区域段数</li> <li>TimeRanges.start(index) //第index段区域的开始位置</li> <li>TimeRanges.end(index) //第index段区域的结束位置</li></ul> <h2 id="常见应用"><a href="#常见应用" class="header-anchor">#</a> 常见应用</h2> <h3 id="视频非全屏播放"><a href="#视频非全屏播放" class="header-anchor">#</a> 视频非全屏播放</h3> <div class="language- extra-class"><pre class="language-text"><code>&lt;video
+  x5-video-player-type=&quot;h5&quot;
+  playsinline
+  webkit-playsinline&gt;
+&lt;/video&gt;
+</code></pre></div><h3 id="隐藏视频右下角的三个点"><a href="#隐藏视频右下角的三个点" class="header-anchor">#</a> 隐藏视频右下角的三个点</h3> <div class="language- extra-class"><pre class="language-text"><code> &lt;video
+  //关闭下载， 音轨
+  controlslist=&quot;nodownload noremoteplayback&quot;
+  //禁止画中画
+  disablePictureInPicture
+/&gt;
+</code></pre></div><blockquote><p>摘自: https://cloud.tencent.com/developer/article/1588145 和
+https://cloud.tencent.com/developer/article/1462727?from=10680</p></blockquote></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/js/stringify的使用.html" class="prev">
+        stringify的使用
+      </a></span> <span class="next"><a href="/js/判断类型的方式.html">
+        判断类型的方式
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.a8f039a7.js" defer></script><script src="/assets/js/2.b233f276.js" defer></script><script src="/assets/js/51.175ebded.js" defer></script>
+  </body>
+</html>
