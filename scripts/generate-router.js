@@ -27,7 +27,6 @@ fse.readdir(source, (err, files) => {
     })
 
     const outputFile = path.join(__dirname, '../source/.vuepress/routes.json')
-    console.log(outputFile)
     fse.writeJSONSync(outputFile, routes, { spaces: '  ', EOL: '\n', encoding: 'utf-8' })
 })
 

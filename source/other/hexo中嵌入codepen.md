@@ -6,7 +6,7 @@ updated: 2020-01-08 11:20:16
 ### 安装
 使用npm安装插件
 ```npm
-$ npm install hexo-codepen --save
+npm install hexo-codepen --save
 ```
 
 ### 语法
