@@ -5,13 +5,18 @@
   "main": "index.js",
   "scripts": {
     "dev": "npx vuepress dev source",
-    "build": "npx vuepress build source"
+    "build": "npx vuepress build source",
+    "post": "node scripts/deploy.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "chalk": "^4.1.0",
+    "child_process": "^1.0.2",
     "fs-extra": "^9.0.1",
+    "minimist": "^1.2.5",
+    "ora": "^5.1.0",
     "vuepress": "^1.5.4"
   }
 }

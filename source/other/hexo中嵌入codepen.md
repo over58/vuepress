@@ -1,11 +1,5 @@
 ---
 title: hexo中嵌入codepen
-author:
-  - 徐勇超
-
-
-  - js知识库
-
 date: 2020-01-08 11:20:16
 updated: 2020-01-08 11:20:16
 ---
@@ -42,5 +36,3 @@ $ npm install hexo-codepen --save
 ```
 {% codepen xuyongchaos rNaJGRW dark %}
 ```
-### 效果
-{% codepen xuyongchaos rNaJGRW dark %}
