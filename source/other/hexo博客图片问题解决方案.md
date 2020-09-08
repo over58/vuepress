@@ -20,9 +20,6 @@ categories: 其他
 把要引用的图片拷贝到xxxx文件夹中
 
 
-```
-{% asset_img example.jpg This is an example image %}来引用本地图片
-```
 如果想使用markdown语法来保持文章编辑整洁,那么可以使用hexo-asset-image插件来实现
 
 那么配置的顺序则为:
