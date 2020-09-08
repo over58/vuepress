@@ -16,12 +16,9 @@ categories: 其他
 第二种方式,在本地插入,hexo官网也有相关说明,hexo图片上传说明
 
 设置站点配置_config.yml:将post_asset_folder: false改为post_asset_folder: true
-
 执行hexo new [xxxx],生成xxxx.md和xxxx文件夹
-
 把要引用的图片拷贝到xxxx文件夹中
 
-<!-- more -->
 
 ```
 {% asset_img example.jpg This is an example image %}来引用本地图片
