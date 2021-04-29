@@ -42,5 +42,3 @@ $ npm install hexo-codepen --save
 ```
 {% codepen xuyongchaos rNaJGRW dark %}
 ```
-### 效果
-{% codepen xuyongchaos rNaJGRW dark %}
