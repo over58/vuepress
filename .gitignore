@@ -1,1 +1,3 @@
 node_modules
+source/.vuepress/dist
+source/.vuepress/public
