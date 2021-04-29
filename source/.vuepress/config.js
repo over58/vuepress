@@ -7,7 +7,7 @@ module.exports = {
   themeConfig: {
     nav: [{ text: '接口定义', link: '/apiword' }],
     sidebar: {
-      '/': routes,
+      '/vuepress/': routes,
     },
     sidebarDepth: 2,
   },
